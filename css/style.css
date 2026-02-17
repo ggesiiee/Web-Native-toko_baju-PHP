@@ -1,0 +1,64 @@
+.product-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+.product-card {
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+text-align: center;
+padding: 15px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product-card img {
+max-width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.product-card h3 {
+font-size: 1.2em;
+margin: 10px 0;
+}
+.product-card .price {
+font-size: 1.1em;
+color: #e67e22;
+font-weight: bold;
+margin-bottom: 15px;
+}
+.product-card button {
+background-color: #3498db;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin-top: 10px;
+}
+.product-actions {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 10px; /* Memberikan jarak antar tombol */
+}
+.product-actions .button-edit,
+.product-actions .button-delete {
+display: inline-block;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 0.9em;
+text-decoration: none; /* Hilangkan garis bawah pada link */
+}
+.product-actions .button-edit {
+background-color: #28a745; /* Warna hijau untuk Edit */
+}
+.product-actions .button-delete {
+background-color: #dc3545; /* Warna merah untuk Hapus */
+}
