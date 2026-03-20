@@ -27,7 +27,7 @@ $result = mysqli_query($conn, $sql);
   <button>Lihat Detail</button>
 
 <div class="product-actions">
-  <a href="pemesanan.php?id_order=<?= $row['id_order']; ?>" class="button-edit">Pesan Sekarang</a>
+    <a href="pemesanan.php?id_produk=<?= $row['id_produk']; ?>" class="button-edit" style="background-color: #28a745; width: 100%; margin-top: 10px;">Pesan Sekarang</a>
     </div>
  </div>
  <?php endwhile; ?>
